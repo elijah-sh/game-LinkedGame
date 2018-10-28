@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/image/close-round.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/default13.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default0.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default1.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default1.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default10.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default11.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default12.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default13.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default13.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default14.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default15.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default16.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default17.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default18.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default19.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default2.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default20.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default21.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default22.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default23.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default24.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default25.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default26.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default27.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default28.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default29.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default3.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default30.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default31.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default32.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default4.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default5.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default6.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default7.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default8.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/icon/default9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/ios7-arrow-thin-left.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/ios7-arrow-thin-right.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/left.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/next.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/paper-airplane.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/user7-128x128.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/image/wrong.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/paper-airplane.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/llk/GameTimer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/llk/LLK.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/llk/LinkCore.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/image/close-round.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/image/paper-airplane.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/image/user7-128x128.jpg" charset="GBK" />
+  </component>
+</project>

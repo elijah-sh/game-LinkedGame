@@ -1,0 +1,4 @@
+gameconfig:
+  MAX_X: 6
+  MAX_Y: 8
+  CELLCATEGORY: 15
