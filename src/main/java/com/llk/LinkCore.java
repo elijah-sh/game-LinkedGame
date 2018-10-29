@@ -23,8 +23,6 @@ public class LinkCore {
     {
         List<Cell> cellList = new ArrayList<>();
 
-     /*   System.out.println(" horizon cell1 ： ( "+cell1.getX()+" , "+cell1.getY()+" )" );
-        System.out.println(" horizon cell2 ： ( "+cell2.getX()+" , "+cell2.getY()+" )" );*/
         Integer x1 = cell1.getX();
         Integer y1 = cell1.getY();
 
@@ -81,8 +79,7 @@ public class LinkCore {
         Integer x2 = cell2.getX();
         Integer y1 = cell1.getY();
         Integer y2 = cell2.getY();
-     /*   System.out.println(" vertical cell1 ： ( "+cell1.getX()+" , "+cell1.getY()+" )" );
-        System.out.println(" vertical cell2 ： ( "+cell2.getX()+" , "+cell2.getY()+" )" );*/
+
         if (x1 == x2 && y1 == y2)
         {
             return null;
@@ -107,8 +104,7 @@ public class LinkCore {
         for (int i = start_x+1; i < end_x; i++)
         {
             Cell cell = new Cell(i,y1,null);
-           // System.out.println(cell.getX()+" "+cell.getY());
-            if (isBlocked(cell))  //  有障碍  结束返回 false
+             if (isBlocked(cell))  //  有障碍  结束返回 false
             {
                 return null;
             }
@@ -154,33 +150,22 @@ public class LinkCore {
         {
             //a|=b的意思就是把a和b按位或然后赋值给a 按位或的意思就是先把a和b都换成2进制，
             // 然后用或操作，相当于 a = a|b
-          /*  System.out.println("cell1： "+cell1.getX()+" , "+cell1.getY());
-            System.out.println("cell2： "+cell2.getX()+" , "+cell2.getY());
-            System.out.println("cellC： "+cellC.getX()+" , "+cellC.getY());*/
 
-            //  System.out.println("水平 "+ horizon(cell1, cellC));   //  比较Y 是否有障碍  y2  与 y1 之间
-            // System.out.println("垂直 "+ vertical(cellC,cell2));
+
             List<Cell> tmp1 = horizon(cell1 , cellC);
             List<Cell> tmp2 = vertical(cellC , cell2);
             ret  |= (tmp1!=null) && (tmp2!=null);
-          //  System.out.println("ret C "+ret);
-            if (ret){
+             if (ret){
                 cellList.addAll(tmp1);
                 cellList.addAll(tmp2);
                tmpCell = cellC ;    //  中间点赋值全局
                 return cellList;
             }
         }
-      //  System.out.println(ret);
-        if (!isBlocked(cellD))  //  无障碍  继续判断
-        {
-           /* System.out.println("cellD");
-            System.out.println("cell1： "+cell1.getX()+" , "+cell1.getY());
-            System.out.println("cell2： "+cell2.getX()+" , "+cell2.getY());
-            System.out.println("cellD： "+cellD.getX()+" , "+cellD.getY());
 
-            System.out.println("水平 比较Y不同的 "+ horizon(cell1, cellD));
-            System.out.println("垂直 比较X不同的 "+ vertical(cellD,cell2));*/
+         if (!isBlocked(cellD))  //  无障碍  继续判断
+        {
+
             List<Cell> tmp1 = vertical(cell1 , cellD);
             List<Cell> tmp2 = horizon(cellD , cell2);
             ret  |= (tmp1!=null) && (tmp2!=null);
@@ -191,8 +176,7 @@ public class LinkCore {
 
                 return cellList;
             }
-          //   ret  |= horizon(cell2, cellD) && vertical(cellD,cell1);
-           // System.out.println("ret D "+ret);
+
         }
 
         return null;
@@ -266,8 +250,8 @@ public class LinkCore {
                 //    System.out.println("最短路径元素"+cellList.size());          disShort.add(dis);
                     map.put(dis,cellList);
                 }
-                //  cell2 到  cell 一折   cell到cell1是一条线
 
+                //  cell2 到  cell 一折   cell到cell1是一条线
                 List<Cell> tmpList1 = vertical(cell1 , cell);
                 List<Cell> tmpList2 = horizon(cell1 , cell);
                 List<Cell> tmpList3 = turnOnce(cell , cell2);
@@ -325,19 +309,17 @@ public class LinkCore {
     public boolean isBlocked(Cell cell){
 
         if (cell.getX()==3&&cell.getY()==8){
-          //  System.out.println("BUG");
+            System.out.println("BUG");
         }
 
          if (cell.getY()<1||cell.getY()>LLK.MAX_Y||cell.getX()<1||cell.getX()>LLK.MAX_X){
              return false;  // 边界  无障碍
          }
 
-        // System.out.println( "isBlocked  ("+cell.getX()+ " , "+ cell.getY()+" )");
-        // System.out.println( "grid  "+LLK.grid[cell.getX()][cell.getY()]);
-
-        if(LLK.grid[cell.getX()][cell.getY()] ==0){
+        if(LLK.gameButton[cell.getX()][cell.getY()].getIcon() == null){
             return false;   //  无障碍
         }
+
         return true;
     }
 
@@ -345,9 +327,8 @@ public class LinkCore {
      * 计算两点的距离
      * @param cell1
      * @param cell2
-     * @return
+     * @return  dis
      */
-
     public int distance1(Cell cell1,Cell cell2)  {
         Integer x1 = cell1.getX();
         Integer x2 = cell2.getX();
@@ -381,6 +362,7 @@ public class LinkCore {
         turnOnce(cell1,cell2);   //turnOnce，通过 tmpCell 来调用distance1
         return distance1(cell1, tmpCell) + distance1(tmpCell, cell2);  //通过 tmpCell 做链接，两次调用distance1
     }
+
 
 
 

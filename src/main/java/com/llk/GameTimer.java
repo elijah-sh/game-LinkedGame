@@ -36,7 +36,6 @@ public class GameTimer {
 		@Override
 		public void run() {
 
-		//	System.out.println("=========="+ new Date());
 			int time ;
 			time = Integer.parseInt(timeJLabel.getText());
 
@@ -44,24 +43,9 @@ public class GameTimer {
 			if (time == 1){
 				timer.cancel();  // 关闭任务 游戏结束
 
-			/*	Object[] options ={ "重玩", "结束" };  //自定义按钮上的文字
-				int result = JOptionPane.showOptionDialog(null,
-						"很遗憾，时间到了，闯关结束，请选择？",
-						"失败",
-						JOptionPane.YES_NO_OPTION,
-						JOptionPane.ERROR_MESSAGE,
-						null, options, options[0]);*/
 				JOptionPane.showMessageDialog(null,
 						"很遗憾，时间到了，闯关结束.", "失败",JOptionPane.PLAIN_MESSAGE);
 
-			/*	if (result == 0){
-					//  重玩
-				 return;
-				}
-				if (result == 1){
-					//  结束
-
-				}*/
 				centerJPanel.removeAll();
 				centerJPanel.repaint();
 
