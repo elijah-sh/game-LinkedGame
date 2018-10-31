@@ -2,57 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6174172b-caf0-44d0-bd33-fdae2adc4d7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/llk/LinkBFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/BFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default0.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon/default0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default11.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default12.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default13.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default14.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default15.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default16.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default17.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default18.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default19.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default19.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default2.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default20.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default21.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default22.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default23.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default23.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default24.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default24.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default25.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default25.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default26.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default26.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default27.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default27.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default28.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default28.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default29.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default29.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default3.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default30.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default30.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default31.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default32.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default4.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default5.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default6.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default7.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default8.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/icon/default9.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/icon2/default9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/llk/GameConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/llk/GameTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/llk/GameTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/llk/LLK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/llk/LLK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/llk/LinkCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/llk/LinkCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/image/close-round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/image/paper-airplane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/image/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/Test2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/llk/EvenHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/llk/EvenHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/llk/GameConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/llk/GameTimer$GameTimerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/llk/GameTimer$GameTimerTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/llk/LLK.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/llk/LLK.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/llk/LinkCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/llk/LinkCore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/image/close-round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/image/paper-airplane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/image/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/Test$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/Test2.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,39 +35,43 @@
     <session id="1727489887">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gif" value="2" />
-          <entry key="java" value="19" />
+          <entry key="java" value="41" />
           <entry key="png" value="4" />
           <entry key="xml" value="1" />
-          <entry key="yml" value="1" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="6" />
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="41" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="1" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4047" />
+          <entry key="java" value="6361" />
+          <entry key="txt" value="12" />
           <entry key="xml" value="3" />
           <entry key="yml" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4047" />
+          <entry key="JAVA" value="6361" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="XML" value="3" />
           <entry key="YAML" value="52" />
         </counts>
@@ -115,36 +83,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-199">
+              <caret line="447" column="27" selection-start-line="447" selection-start-column="27" selection-end-line="447" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#linkedTest#0;class#EvenHandler#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/LLK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="452" column="47" lean-forward="true" selection-start-line="452" selection-start-column="47" selection-end-line="452" selection-end-column="47" />
+            <state relative-caret-position="163">
+              <caret line="494" column="1" selection-start-line="494" selection-start-column="1" selection-end-line="494" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/LinkBFS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2047">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
               <folding>
-                <element signature="method#validation#0;class#LLK#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/BFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
-              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="1472">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#drawLine#0;class#EvenHandler#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/LinkCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="367" lean-forward="true" selection-start-line="367" selection-end-line="367" />
+            <state relative-caret-position="3358">
+              <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
+              <folding>
+                <element signature="method#turnOnce#0;class#LinkCore#0" />
+                <element signature="method#isBlocked#0;class#LinkCore#0" />
+                <element signature="method#distance1#0;class#LinkCore#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,6 +157,9 @@
       <find>thisContainer</find>
       <find>centerJPanel</find>
       <find>System.out.pri</find>
+      <find>BUG</find>
+      <find>setBackground</find>
+      <find>.setBorder</find>
     </findStrings>
     <replaceStrings>
       <replace>container</replace>
@@ -192,9 +189,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/Test2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/llk/GameTimer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/llk/LLK.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/llk/LinkCore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/Graph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/AbstrctGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/BFS2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/llk/BFS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/llk/LinkBFS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/BFS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/llk/LLK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java" />
       </list>
     </option>
   </component>
@@ -217,10 +220,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="505" />
-    <option name="y" value="12" />
-    <option name="width" value="1378" />
-    <option name="height" value="733" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,7 +232,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,7 +279,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,8 +289,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540792908723" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/LinkGame-master" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540899114720" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../eclipse-workspace/mftccManager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -296,19 +299,19 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame\src\main\java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.test" />
-      <recent name="com.llk" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame\src\main\java\com\graph" />
       <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame\image" />
       <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame\image\icon2" />
       <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame\image\icon" />
       <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame\src\main\resources\image" />
-      <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.llk" />
+      <recent name="com.test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyFile\Develop\IDEA\Exam\LinkedGame\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -330,13 +333,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LLK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.llk.LLK" />
+    <configuration name="BFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.BFS" />
       <module name="LinkedGame" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.llk.*" />
+          <option name="PATTERN" value="com.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -344,13 +347,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.Test" />
+    <configuration name="BFS2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.BFS2" />
       <module name="LinkedGame" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.Graph" />
+      <module name="LinkedGame" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LLK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.llk.LLK" />
+      <module name="LinkedGame" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.llk.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -378,32 +409,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigTest.point" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LinkedGame" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConfigTest" />
-      <option name="METHOD_NAME" value="point" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedGameApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="LinkedGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.LinkedGameApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -426,19 +433,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.LinkedGameApp" />
       <item itemvalue="Application.LLK" />
-      <item itemvalue="JUnit.ConfigTest.point" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.Graph" />
+      <item itemvalue="Application.BFS" />
+      <item itemvalue="Application.BFS2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LLK" />
+        <item itemvalue="Application.BFS" />
+        <item itemvalue="Application.BFS2" />
+        <item itemvalue="Application.Graph" />
         <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Spring Boot.LinkedGameApp" />
-        <item itemvalue="JUnit.ConfigTest.point" />
       </list>
     </recent_temporary>
   </component>
@@ -454,8 +461,18 @@
       <updated>1540614491144</updated>
       <workItem from="1540614494938" duration="32178000" />
       <workItem from="1540713680445" duration="24041000" />
-      <workItem from="1540773744776" duration="13785000" />
+      <workItem from="1540773744776" duration="21680000" />
+      <workItem from="1540857009886" duration="33048000" />
+      <workItem from="1540947970879" duration="1573000" />
     </task>
+    <task id="LOCAL-00001" summary="add icon">
+      <created>1540793330255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540793330255</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -464,7 +481,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70004000" />
+    <option name="totallyTimeSpent" value="112520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -477,11 +494,11 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.2647504" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41967213" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33442622" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -501,8 +518,8 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,14 +528,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add icon" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/GameApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,11 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" selection-start-line="9" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,38 +554,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1142#1148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Test2.java" />
     <entry file="file://$PROJECT_DIR$/win.gif" />
     <entry file="file://$PROJECT_DIR$/1.gif" />
     <entry file="jar://D:/SoftWare/Develop/java/jdk1.8.0_121/src.zip!/java/lang/Class.java">
@@ -598,48 +581,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/GameConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Graph.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/BFS.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/BFS2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/BFS.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/AbstrctGraph.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/GGraph.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/BFS2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/GameTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#drawLine#0;class#EvenHandler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/GameConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="49" selection-start-line="13" selection-start-column="3" selection-end-line="15" selection-end-column="49" />
+          <caret line="47" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/LinkBFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2047">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/LLK.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/BFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="452" column="47" lean-forward="true" selection-start-line="452" selection-start-column="47" selection-end-line="452" selection-end-column="47" />
+        <state relative-caret-position="1472">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
           <folding>
-            <element signature="method#validation#0;class#LLK#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/LinkCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="367" lean-forward="true" selection-start-line="367" selection-end-line="367" />
+        <state relative-caret-position="3358">
+          <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
+          <folding>
+            <element signature="method#turnOnce#0;class#LinkCore#0" />
+            <element signature="method#isBlocked#0;class#LinkCore#0" />
+            <element signature="method#distance1#0;class#LinkCore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/LLK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="494" column="1" selection-start-line="494" selection-start-column="1" selection-end-line="494" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="447" column="27" selection-start-line="447" selection-start-column="27" selection-end-line="447" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#linkedTest#0;class#EvenHandler#0" />
+          </folding>
         </state>
       </provider>
     </entry>

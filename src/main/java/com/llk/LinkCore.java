@@ -308,9 +308,6 @@ public class LinkCore {
      */
     public boolean isBlocked(Cell cell){
 
-        if (cell.getX()==3&&cell.getY()==8){
-            System.out.println("BUG");
-        }
 
          if (cell.getY()<1||cell.getY()>LLK.MAX_Y||cell.getX()<1||cell.getX()>LLK.MAX_X){
              return false;  // 边界  无障碍

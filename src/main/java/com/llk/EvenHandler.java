@@ -2,8 +2,12 @@ package com.llk;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
-import org.springframework.stereotype.Service;
+
+import static com.llk.LLK.MAX_X;
+import static com.llk.LLK.MAX_Y;
+import static com.llk.LLK.gameButton;
 
 /**
  * @Auther: shuaihu.shen@hand-china.com
@@ -33,27 +37,33 @@ public class EvenHandler {
         if ( LLK.pressFlag == false){  // 未被选中
             cell2 = cell;  // 只被点击一次
 
-            cell2.getJButton().setContentAreaFilled(true);//设置图片填满按钮所在的区域
-
+        //    cell2.getJButton().setContentAreaFilled(true);//设置图片填满按钮所在的区域
+            cell2.getJButton().setBorder(BorderFactory.createLineBorder(Color.RED));
             LLK.pressFlag = true;
         }else {
             // 已有选中的, 即不是第一次点击
             cell1 = cell2;
             cell2 = cell;
 
-            cell1.getJButton().setContentAreaFilled(false);//设置图片填满按钮所在的区域
+          //  cell1.getJButton().setContentAreaFilled(false);//设置图片填满按钮所在的区域
+            cell1.getJButton().setBorder(null);
 
-            cell2.getJButton().setContentAreaFilled(true);//设置图片填满按钮所在的区域
+          //  cell2.getJButton().setContentAreaFilled(true);//设置图片填满按钮所在的区域
+            cell2.getJButton().setBorder(BorderFactory.createLineBorder(Color.RED));
 
-            cell.getJButton().setBackground(new Color(127, 174, 252));
-            cell.getJButton().setContentAreaFilled(true);//设置图片填满按钮所在的区域
+           // cell.getJButton().setBackground(new Color(127, 174, 252));
+          //  cell.getJButton().setContentAreaFilled(true);//设置图片填满按钮所在的区域
 
             String icon1 = String.valueOf(cell1.getJButton().getIcon());
             String icon2 = String.valueOf(cell2.getJButton().getIcon());
 
+            centerJPanel.repaint();
             if (cell2.getJButton() != cell1.getJButton()&&icon1.equals(icon2)){
                 //  开始进行判断消除
+
+
                   int result = linked(cell1,cell2,centerJPanel,gameButton );
+
                   if (result != -2 ){   //  消除成功
                       pointUpdate(pointJLabel);   // 分数更新
                       return result;   //   -1  成功  0  1 清空了
@@ -80,6 +90,19 @@ public class EvenHandler {
 
         LinkCore linkCore = new LinkCore();
         EvenHandler evenHandler  = new EvenHandler();
+
+        //   使用BFS 求  可用
+      /*  List<Cell> bfsLsit = new ArrayList<>();
+        boolean bfsResult =   LinkBFS.BFS(cell1,cell2);
+        if (bfsResult){
+            bfsLsit.add(cell1);
+            bfsLsit.add(cell2);
+            evenHandler.drawLine(bfsLsit, centerJPanel);
+            int result =  clean(bfsLsit,gameButton );
+            return result;
+        }*/
+
+
 
         List<Cell> horizon = linkCore.horizon(cell1,cell2);
         if (horizon != null){
@@ -186,12 +209,12 @@ public class EvenHandler {
      * 两个cell上画线
      * @param cellList  画线的轨迹
      */
-    public void  drawLine(List<Cell> cellList, JPanel centerPanel) {
+    public void  drawLine(List<Cell> cellList, JPanel centerJPanel) {
 
         int MAX_Y = LLK.MAX_Y;
         int MAX_X = LLK.MAX_X;
-        int width = centerPanel.getWidth() / (MAX_Y+2);  // 按钮宽度
-        int height = centerPanel.getHeight() / (MAX_X+2);  // 按钮长度
+        int width = centerJPanel.getWidth() / (MAX_Y+2);  // 按钮宽度
+        int height = centerJPanel.getHeight() / (MAX_X+2);  // 按钮长度
 
         for (int i = 0; i < cellList.size() - 1; i++) {
 
@@ -202,7 +225,7 @@ public class EvenHandler {
             int endX = cellList.get(i+1).getY() * width;
 
 
-            Graphics2D graphics2D = (Graphics2D) centerPanel.getGraphics();
+            Graphics2D graphics2D = (Graphics2D) centerJPanel.getGraphics();
             graphics2D.setStroke(new BasicStroke(2.0F));  //定义线条的特征
             graphics2D.setColor(Color.blue);
             graphics2D.drawLine(
@@ -288,5 +311,179 @@ public class EvenHandler {
         return -1;   //  游戏未结束
 
     }
+
+
+    /**********************************
+     *   提示功能
+     */
+    public void suggest(int[][]  icon , JPanel centerJPanel){
+        LLK  llk = new LLK();
+        boolean result =  suggestCell1(icon,centerJPanel);
+
+        if (!result){
+            System.out.println(" 没有可以消除的");
+            JOptionPane.showMessageDialog(null,
+                    "很遗憾，没有可以消除的", "提示",JOptionPane.PLAIN_MESSAGE);
+        }
+
+    }
+
+    public boolean suggestCell1(  int[][]  icon , JPanel centerJPanel ) {
+
+        for (int x = 1; x < icon.length -1; x++) {
+
+            for (int y = 1; y < icon[x].length -1; y++) {
+
+                if (gameButton[x][y].getIcon() == null){
+                    continue;
+                }
+                if (x == icon.length -2 && y == icon[x].length -2 ){  //  最后一个不用便利
+                    continue;
+                }
+                Cell cell1   = new Cell(x, y, gameButton[x][y]);
+                boolean   result  =   suggestCell2(x,y,cell1 ,icon,centerJPanel);
+
+                if (result){
+                    return true;  // 成功
+                }
+            }
+        }
+
+        return false;
+    }
+    /**********************
+     * 验证时 选取第二个Cell
+     * @param x
+     * @param y
+     * @param cell1
+     * @param icon
+     * @return
+     */
+    public boolean suggestCell2(int x, int y ,Cell cell1, int[][]  icon , JPanel centerJPanel) {
+
+        for (int i = 1; i < icon.length -1; i++) {
+
+            for (int j = 1; j < icon[i].length -1; j++) {
+                if (i <  x  ){
+                    continue;
+                }
+                if (i <  x+1  && j <  y ){
+                    continue;
+                }
+                if (i ==1 && j == 1){
+                    continue;
+                }
+                if (gameButton[x][y].getIcon() == null){   // 不校验空值
+                    continue;
+                }
+                Cell  cell2   = new Cell(i,j,gameButton[i][j]);
+                // 先判断数值是否相等
+
+                String icon1 = String.valueOf(cell1.getJButton().getIcon());
+                String icon2 = String.valueOf(cell2.getJButton().getIcon());
+
+                if (cell2.getJButton() != cell1.getJButton()&&icon1.equals(icon2)){
+                  boolean  result = linkedSuggest(cell1,cell2 ,centerJPanel);
+
+                    if (result){
+                        return true;  // 成功
+                    }
+                }
+
+            }
+        }
+
+        return false;
+    }
+
+
+    /**
+     *   两个相同的元素消除  棋盘初始化测试
+     * @param cell1
+     * @param cell2
+     * @return  -2 失败  其他返回值成功（-1）未消除玩
+     */
+
+    public boolean linkedSuggest(Cell cell1,Cell cell2 ,JPanel centerJPanel){
+
+        //   使用BFS 求  可用
+        boolean bfsResult =   LinkBFS.BFS(cell1,cell2);
+         if (bfsResult){
+
+            cell1.getJButton().setBackground(new Color(127, 174, 252));
+            cell2.getJButton().setBackground(new Color(127, 174, 252));
+
+             drawLineSimple(cell1,centerJPanel);
+             drawLineSimple(cell2,centerJPanel);
+
+
+        }
+
+
+        return bfsResult ;
+    }
+
+    /****************************************
+     * 单个cell上画线
+     * @param cell  画线的轨迹
+     */
+    public void  drawLineSimple(Cell cell, JPanel centerJPanel) {
+
+        int MAX_Y = LLK.MAX_Y;
+        int MAX_X = LLK.MAX_X;
+        int width = centerJPanel.getWidth() / (MAX_Y+2);  // 按钮宽度
+        int height = centerJPanel.getHeight() / (MAX_X+2);  // 按钮长度
+
+        int cellY = cell.getX() * height;   // 起始位置
+        int cellX = cell.getY() * width;
+
+        List<Integer> pontX = new ArrayList<>();
+        List<Integer> pontY = new ArrayList<>();
+
+        pontX.add(cellX);   //    横  右
+        pontY.add(cellY);
+        pontX.add(cellX+width);
+        pontY.add(cellY);
+
+        pontX.add(cellX+width); //  丨 下
+        pontY.add(cellY);
+        pontX.add(cellX+width);
+        pontY.add(cellY+height);
+
+        pontX.add(cellX+width);  //  横 左
+        pontY.add(cellY+height);
+        pontX.add(cellX);
+        pontY.add(cellY+height);
+
+        pontX.add(cellX);       //   丨 上
+        pontY.add(cellY+height);
+        pontX.add(cellX);
+        pontY.add(cellY);
+
+        for (int i = 0; i < 8; i=i+2) {
+
+            int startX = pontX.get(i);
+            int startY = pontY.get(i);   // 起始位置
+
+            int endX = pontX.get(i+1);
+            int endY = pontY.get(i+1);   // 结束位置
+
+
+            Graphics2D graphics2D = (Graphics2D) centerJPanel.getGraphics();
+            graphics2D.setStroke(new BasicStroke(3.0F));  //定义线条的特征
+            graphics2D.setColor(Color.blue);
+            graphics2D.drawLine(
+                    startX, startY, endX, endY
+            );
+
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
 
 }

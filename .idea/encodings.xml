@@ -36,21 +36,12 @@
     <file url="file://$PROJECT_DIR$/image/icon/default5.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon/default6.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon/default7.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon/default8 (1).png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon/default8.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon/default9.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default0.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default0.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default0.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default0.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default0.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default0.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default1.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default1.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default10.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default11.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default12.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/icon2/default13.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default13.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default14.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default15.png" charset="GBK" />
@@ -79,20 +70,16 @@
     <file url="file://$PROJECT_DIR$/image/icon2/default7.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default8.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/icon2/default9.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/ios7-arrow-thin-left.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/image/ios7-arrow-thin-right.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/left.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/next.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/paper-airplane.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/user7-128x128.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/image/wrong.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/paper-airplane.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/graph/BFS2.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/llk/EvenHandler.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/llk/GameTimer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/llk/LLK.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/llk/LinkCore.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/image/close-round.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/image/paper-airplane.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/image/user7-128x128.jpg" charset="GBK" />
   </component>
 </project>

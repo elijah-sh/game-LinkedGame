@@ -4,6 +4,7 @@ package com.llk;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -27,8 +28,8 @@ import static com.sun.javafx.fxml.expression.Expression.add;
  */
 public class LLK implements ActionListener {
 
-    static   int MAX_X = 4;     // 高度
-    static    int MAX_Y = 4;   // 宽度
+    static   int MAX_X = 6;     // 高度
+    static    int MAX_Y = 6;   // 宽度
     static    int CELLCATEGORY = 15;   //  传入不同的元素类型个人
 
      JFrame mainFrame;  // 主面板
@@ -39,6 +40,7 @@ public class LLK implements ActionListener {
     JButton resetButton = new JButton("重新开始");;  // 两个菜单按钮
     JButton nextButton = new JButton("下一关");;  // 两个菜单按钮
     JButton beforeButton = new JButton("上一关");;  // 两个菜单按钮
+    JButton suggestButton = new JButton("提示");;  // 两个菜单按钮
 
 
  //    static int[][] grid = new int[MAX_X+2][MAX_Y+2];  // 游戏按钮位置 含边框 6 = 4+1+1
@@ -46,7 +48,7 @@ public class LLK implements ActionListener {
 
     static   boolean pressFlag = false ; //  按钮是否被选中
 
-      JPanel centerJPanel, menuPanel, downJPanel; // 子面板
+      JPanel centerJPanel, menuJPanel, downJPanel; // 子面板
 
 
     JLabel timeJLabel = new JLabel();   // 时间组件
@@ -54,6 +56,7 @@ public class LLK implements ActionListener {
 
 
      EvenHandler evenHandler = new EvenHandler()  ;
+      private int[][] iconDate;
 
     /*******************************************
      * 初始化布局
@@ -66,16 +69,16 @@ public class LLK implements ActionListener {
 
          centerJPanel = new JPanel();   // 游戏界面
          downJPanel = new JPanel();
-         menuPanel = new JPanel();  // 菜单栏
+         menuJPanel = new JPanel();  // 菜单栏
 
         pointJLabel = new JLabel("0"); // 定义分数标签，并初始化为0.
         pointJLabel.setText(String.valueOf(Integer.parseInt(pointJLabel.getText())));  // 分数
 
-        menuPanel.add(pointJLabel); // 将“分数”标签加入northPanel
+        menuJPanel.add(pointJLabel); // 将“分数”标签加入northPanel
 
         container.add(centerJPanel,"Center");
         container.add(downJPanel,"South");
-        container.add(menuPanel,"East");
+        container.add(menuJPanel,"East");
 
         centerJPanel.setLayout(new GridLayout(MAX_X+2,MAX_Y+2)); // MAX_X * MAX_Y 网格布局
 
@@ -153,6 +156,14 @@ public class LLK implements ActionListener {
         beforeButton.addActionListener(this); // 向“重列”按钮添加事件监听
         controlJPanel.add(beforeJPanel);
 
+        JPanel suggestJPanel = new JPanel();  // 提示
+        suggestJPanel.setBorder(new EtchedBorder());
+        suggestJPanel.setBackground(new Color(208, 223, 255));
+        suggestJPanel.add(suggestButton);
+        suggestButton.addActionListener(this); // 向“重列”按钮添加事件监听
+        controlJPanel.add(suggestJPanel);
+
+
         JPanel exitJPanel = new JPanel();  // 退出
         exitJPanel.setBorder(new EtchedBorder());
         exitJPanel.add(exitButton);
@@ -174,7 +185,7 @@ public class LLK implements ActionListener {
         initJPanel.add(initJLabel);
         centerJPanel.add(initJPanel);
 
-       menuPanel.add(controlJPanel);
+        menuJPanel.add(controlJPanel);
 
             int height = 650;
             int width = 800;
@@ -200,7 +211,7 @@ public class LLK implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        if (e.getSource() == exitButton){
+        if (e.getSource() == exitButton){    // 退出
             System.exit(0);
         }
 
@@ -222,8 +233,20 @@ public class LLK implements ActionListener {
             pointJLabel.setText("0");
         }
 
+        if (e.getSource() == suggestButton){  // 建议
+
+
+            try {
+                evenHandler.suggest(iconDate,centerJPanel);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+                JOptionPane.showMessageDialog(null,
+                        "请先开始游戏!", "提示",JOptionPane.PLAIN_MESSAGE);
+            }
+        }
+
         if (e.getSource() == beforeButton){  //  上一局
-            if (MAX_X < 4){
+            if (MAX_X < 4 || MAX_Y <4 ){
                 JOptionPane.showMessageDialog(null,
                         "当前为第一关，无法选择上一关.", "提示",JOptionPane.PLAIN_MESSAGE);
             }else {
@@ -305,22 +328,22 @@ public class LLK implements ActionListener {
 
     }
 
+
     /**********************
      * 验证时 选取第一个Cell
      * @param icon
      * @return
      */
-
     public boolean validation(  int[][]  icon ) {
 
         for (int x = 1; x < icon.length -1; x++) {
 
-            for (int y = 1; y < icon[y].length -1; y++) {
+            for (int y = 1; y < icon[x].length -1; y++) {
 
                 if (gameButton[x][y].getIcon() == null){
                     continue;
                 }
-                if (x == icon.length -2 && y == icon[y].length -2 ){  //  最后一个不用便利
+                if (x == icon.length -2 && y == icon[x].length -2 ){  //  最后一个不用便利
                     continue;
                 }
                 Cell cell1   = new Cell(x, y, gameButton[x][y]);
@@ -373,6 +396,8 @@ public class LLK implements ActionListener {
                  if (cell2.getJButton() != cell1.getJButton()&&icon1.equals(icon2)){
                   //   System.out.println (cell1.toString()+"  "+ cell2.toString());
                       result =  evenHandler.linkedTest(cell1,cell2,centerJPanel,gameButton);
+
+                      //  尽使用提示功能
                 }
 
             }
@@ -464,9 +489,10 @@ public class LLK implements ActionListener {
                 gameButton[cols][rows] = new JButton(nextIcon);   //  新建按钮
                 gameButton[cols][rows].setMaximumSize(new Dimension(48,48));//设置按钮和图片的大小相同
                 gameButton[cols][rows].setFocusPainted(false);
-                gameButton[cols][rows].setContentAreaFilled(false);//设置图片填满按钮所在的区域
-                gameButton[cols][rows].setBorderPainted(false); //设置按钮边界不显示
-                gameButton[cols][rows].setBackground(new Color(127, 174, 252));
+                gameButton[cols][rows].setBorder(null);
+               // gameButton[cols][rows].setContentAreaFilled(false);//设置图片填满按钮所在的区域
+              //  gameButton[cols][rows].setBorderPainted(false); //设置按钮边界不显示
+               //  gameButton[cols][rows].setBackground(new Color(127, 174, 252));
                 gameButton[cols][rows].addActionListener(this); // 添加监听事件
                 centerJPanel.add(gameButton[cols][rows]);
 
@@ -477,6 +503,9 @@ public class LLK implements ActionListener {
             }
         }
 
+            this.iconDate = icon;
+
+        //   重置时间
        int time = Integer.parseInt(timeJLabel.getText());
         if (time  == 0){
             timeJLabel.setText(String.valueOf(180));
